@@ -12,8 +12,31 @@
 body {
 	font-family: "맑은 고딕", serif;
 	font-size: 0.75em;
-	color: #333;
+	color: #333; 
 }
+
+#join-form {
+	width: 280px;
+	margin: 100px auto;
+	border: 1px solid #666;
+	
+}
+label.legend, input[type='text'], input[type='password'], input[type='image'] {
+	display: block;
+}
+	
+label.legend, fieldset {
+	margin: 10px 0 5px 0;
+}
+
+legend {
+	margin-bottom: 5px;
+}
+
+fieldset{
+	border: 0px; 
+}
+
 </style>
 </head>
 <body>
@@ -24,7 +47,7 @@ body {
 		<br>
 
 		<label class="legend" for="password">패스워드</label>
-		<input id="password" name="passwprd" type="password">
+		<input id="password" name="password" type="password">
 
 		<fieldset>
 			<legend>생년월일</legend>
@@ -68,7 +91,7 @@ body {
 			<label for="agree-prov">약관에 동의합니다.</label>
 		</fieldset>
 
-		<input type="submit" value="가입">
+		<input type="image" src="/ch05/images/login.png">
 	</form>
 </body>
 </html>

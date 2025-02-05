@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="">
-<head>
-	<title>ex12</title>
-	<meta charset="UTF-8">
-</head>
-<body>
-	<h1>DOM(Document Object Model)</h1>
-	<h2>5. Event 처리</h2>
-	<h3 id='header'>Click!</h3>
-</body>
+  <head>
+    <title>ex12</title>
+    <meta charset="UTF-8" />
+  </head>
+  <script>
+    window.addEventListener("load", function () {
+      document.getElementById("header").addEventListener("click", function () {
+        alert("Hello DOM");
+      });
+    });
+  </script>
+  <body>
+    <h1>DOM(Document Object Model)</h1>
+    <h2>5. Event 처리</h2>
+    <h3 id="header">Click!</h3>
+  </body>
 </html>

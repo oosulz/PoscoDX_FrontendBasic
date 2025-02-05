@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="">
-<head>
-	<title>ex08</title>
-	<meta charset="UTF-8">
-</head>
-<body>
-	<h1 id='h' data-no='10'>DOM(Document Object Model)</h1>
-	<h2>3. HTML Element 속성 조작하기1</h2>
-</body>
+  <head>
+    <title>ex08</title>
+    <meta charset="UTF-8" />
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          var imgElement = document.createElement("img");
+          imgElement.src = "/ch06/initprofile.webp";
+          imgElement.alt = "프로필 사진";
+          imgElement.title = "프로필 타이틀";
+
+          document.body.appendChild(imgElement);
+        }, 500);
+      };
+    </script>
+  </head>
+
+  <body>
+    <h1 id="h" data-no="10">DOM(Document Object Model)</h1>
+    <h2>3. HTML Element 속성 조작하기1</h2>
+  </body>
 </html>

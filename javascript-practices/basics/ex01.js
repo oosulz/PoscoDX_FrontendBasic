@@ -5,13 +5,13 @@ var i = 10; // number
 var s = "hello world"; // string
 var b = true; // boolean
 
-console.log(u+i); // NaN
-//var sum = j +20;
+console.log(u + i); // NaN
+// var sum = j + 20; // j is not defined, this will cause an error
 
 var n = null;
-console.log(n+20); // 20
+console.log(n + 20); // 20
 
-console.log("u:" + typeof(u) ); // undefined
+console.log("u:" + typeof(u)); // undefined
 console.log("i:" + typeof(i)); // number
 console.log("s:" + typeof(s)); // string
 console.log("b:" + typeof(b)); // boolean
@@ -23,17 +23,16 @@ var s = new String("hello world"); // object
 var b = new Boolean(true); // object
 var f = new Function("x", "return x*x"); // object
 var o = new Object(); // object
-var a = new Array(); // object\
+var a = new Array(); // object
 var n = null;
 
-console.log("i:" + typeof(i) + " " +( i instanceof(Number) )); // object true
-console.log("s:" + typeof(s) + " " +( i instanceof(String) )); // object false
-console.log("b:" + typeof(b) + " " +( i instanceof(Boolean) )); // object false
-console.log("f:" + typeof(f) + " " +( i instanceof(Function) )); // object false
-console.log("o:" + typeof(o) + " " +( i instanceof(Object) )); // object true
-console.log("a:" + typeof(a) + " " +( i instanceof(Array) )); // object false
-console.log("n:" + typeof(n) + " " +( i instanceof(null) )); // object false    
-
+console.log("i:" + typeof(i) + " " + (i instanceof Number)); // object true
+console.log("s:" + typeof(s) + " " + (s instanceof String)); // object true
+console.log("b:" + typeof(b) + " " + (b instanceof Boolean)); // object true
+console.log("f:" + typeof(f) + " " + (f instanceof Function)); // object true
+console.log("o:" + typeof(o) + " " + (o instanceof Object)); // object true
+console.log("a:" + typeof(a) + " " + (a instanceof Array)); // object true
+console.log("n:" + typeof(n) + " " + (n === null)); // object false
 
 // Section 02.02: 객체타입: function
 console.log("============[02.02] 객체타입: function");
@@ -55,8 +54,8 @@ console.log("f3:" + typeof(f3)); // function
 // Section 06: 기본타입과 유사객체
 console.log("============[06] 기본타입과 유사객체");
 
-var b1 = true;
-var b2 = new Boolean(true);
+var b1 = true; // boolean primitive
+var b2 = new Boolean(true); // Boolean object
 
 console.log("b1:" + typeof(b1)); // boolean
 console.log("b2:" + typeof(b2)); // object

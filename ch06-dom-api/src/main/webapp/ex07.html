@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="">
-<head>
-	<title>ex07</title>
-	<meta charset="UTF-8">
-</head>
-<body>
-	<h1>DOM(Document Object Model)</h1>
-	<h2>2. HTML Element 추가2</h2>
-</body>
+  <head>
+    <title>ex07</title>
+    <meta charset="UTF-8" />
+  </head>
+  <script>
+    window.onload = function () {
+      // 2. HTML Element 추가
+      // 2-2) 요소(Element) 추가
+      setTimeout(function () {
+        var html = "<h3>Hello Dom</h3>";
+        document.body.innerHTML = document.body.innerHTML + html;
+      }, 3000);
+    };
+  </script>
+  <body>
+    <h1>DOM(Document Object Model)</h1>
+    <h2>2. HTML Element 추가2</h2>
+  </body>
 </html>

@@ -12,7 +12,13 @@ K=
 10
 ;
 
-console.log("hello world");
+//console.lo
+//g("hello world");
+
+function f(){
+    var x = 10
+    return x * 10
+}
 
 
 console.log("============[06] 개행(Line Break)");

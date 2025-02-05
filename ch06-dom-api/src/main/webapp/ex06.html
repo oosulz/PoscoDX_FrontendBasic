@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="">
-<head>
-	<title>ex06</title>
-	<meta charset="UTF-8">
-</head>
-<body>
-	<h1>DOM(Document Object Model)</h1>
-	<h2>2. HTML Element 추가1</h2>
-</body>
+  <head>
+    <title>ex06</title>
+    <meta charset="UTF-8" />
+  </head>
+  <script>
+    window.onload = function () {
+      // 2. HTML Element 추가
+      // 2-1) 요소(Element) 추가
+      setTimeout(function () {
+        var h3Element = document.createElement("h3");
+        var h3TextNode = document.createTextNode("hello dom");
+
+        h3Element.append(h3TextNode);
+        document.body.appendChild(h3Element);
+      }, 2000);
+    };
+  </script>
+  <body>
+    <h1>DOM(Document Object Model)</h1>
+    <h2>2. HTML Element 추가1</h2>
+  </body>
 </html>

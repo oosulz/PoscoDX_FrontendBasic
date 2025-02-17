@@ -8,3 +8,4 @@
     6. 다중 export가 가능하다.
 
 */
+npm i react@18 react-dom@18 web-vitals
